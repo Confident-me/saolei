@@ -1,0 +1,69 @@
+#mine {
+	text-align:center;
+	position:relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+#mine label {
+	display:inline-block;
+	margin:auto 5px;
+}
+#game {
+	position:relative;
+	text-align:center;
+	margin:10px auto;
+	padding:10px;
+	overflow-x:auto;
+}
+#game span {
+	position:absolute;
+	border:2px outset lightgrey;
+	background:silver;
+	display:block;
+	margin:0;
+	padding:0;
+	cursor:default;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+}
+#game span.open {
+	border:1px solid darkgray;
+	padding:1px;
+	background:white;
+}
+#game span.spark {
+	background:lavender;
+}
+#game span.wrong {
+	background:red;
+	color:yellow;
+}
+#mines,#time {
+	display:inline-block;
+	width:40px;
+	color:dodgerblue;
+}
+#msg {
+	color:olive;
+}
+
+
+
+@media(max-width: 600px){
+	#mine{
+		width: 100%;
+		height: 100%;
+	}
+	#game{
+		width: 90%;
+		height: 60%;
+	}
+	#game span{
+		width: 30px;
+		height: 30px;
+	}
+}
